@@ -1,1 +1,59 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.post {
+  max-width: 720px;
+  margin-top: 1rem;
+  a {
+    display: block;
+
+
+    &:hover {
+      strong {
+        color: var(--pink-500);
+      }
+    }
+
+    & + a {
+      margin-top: 3rem;
+    }
+  }
+
+  strong {
+    color: var(--gray-50);
+    font-size: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.118rem;
+    text-align: justify;
+    transition: color 0.2s;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    color: var(--gray-100);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.361rem;
+    text-align: justify;
+  }
+}
+
+.loadMore {
+  margin: 4rem auto 5rem;
+
+  button {
+    background: transparent;
+    border: 0;
+    color: var(--pink-500);
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+}

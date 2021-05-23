@@ -1,1 +1,13 @@
-// TODO
+.postDetails {
+  margin-top: 1.5rem;
+
+  span {
+    & + span {
+      margin-left: 2rem;
+    }
+
+    color: var(--gray-150);
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+}
